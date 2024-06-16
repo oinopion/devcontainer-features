@@ -1,0 +1,16 @@
+{
+    "mise_on_ubuntu_root": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "mise": {}
+        },
+        "remoteUser": "root"
+    },
+    "mise_on_ubuntu_vscode": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "mise": {}
+        },
+        "remoteUser": "vscode"
+    }
+}
