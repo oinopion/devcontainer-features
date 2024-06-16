@@ -1,0 +1,10 @@
+{
+    "name": "Mise",
+    "id": "mise",
+    "version": "0.1.0",
+    "description": "Mise is a polyglot tool version manager. It replaces tools like asdf, nvm, pyenv, rbenv, etc.",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
