@@ -42,7 +42,7 @@ source dev-container-features-test-lib
 # check <LABEL> <cmd> [args...]
 check "mise is available on path" bash -c "mise version"
 
-# Not sure how to make this work in this test
+# TODO: Not sure how to make this work in this test
 # check "no mise doctor problems" bash -c "mise exec -- mise doctor | grep 'No problems found'"
 # check "no mise doctor warnings" bash -c "mise exec -- mise doctor | grep 'No warnings found'"
 
