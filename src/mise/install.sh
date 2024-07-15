@@ -26,11 +26,9 @@ echo 'eval "$(mise activate bash)"' >> "${_REMOTE_USER_HOME}/.bashrc"
 echo 'eval "$(mise activate zsh)"' >> "${_REMOTE_USER_HOME}/.zshrc"
 mkdir -p /etc/fish/conf.d/ && echo 'mise activate fish | source' >> /etc/fish/conf.d/mise.fish
 
-# TODO: add shell completions
-# USAGE_VERSION="latest"  # But for mise tool spec we need string "latest"
-# mise install "usage@${USAGE_VERSION}"
-# usage_binary=(mise which usage --tool="usage@${USAGE_VERSION}")
-# cp "${usage_binary}" ${INSTALL_PATH}
-# mise completion fish > /etc/fish/completions/mise.fish
+mise install usage
+mkdir -p /usr/share/bash-completion/completions/ && mise completions zsh > /usr/share/bash-completion/completions/mise
+mkdir -p /usr/share/zsh/vendor-completions/ && mise completions zsh > /usr/share/zsh/vendor-completions/_mise
+mkdir -p /etc/fish/completions/ && mise completion fish > /etc/fish/completions/mise.fish
 
-chown -R $_REMOTE_USER $OPT_PATH
+chown -R "${_REMOTE_USER}" "${OPT_PATH}"
