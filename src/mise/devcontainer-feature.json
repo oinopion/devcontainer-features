@@ -1,7 +1,7 @@
 {
     "name": "Mise",
     "id": "mise",
-    "version": "0.9.0",
+    "version": "0.9.9",
     "description": "Mise is a polyglot tool version manager. It replaces tools like asdf, nvm, pyenv, rbenv, etc.",
     "options": {},
     "dependsOn": {
