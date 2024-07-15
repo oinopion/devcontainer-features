@@ -7,7 +7,7 @@ Mise is a polyglot tool version manager. It replaces tools like asdf, nvm, pyenv
 
 ```json
 "features": {
-    "ghcr.io/oinopion/devcontainer-features/mise:0": {}
+    "ghcr.io/oinopion/devcontainer-features/mise:1": {}
 }
 ```
 
